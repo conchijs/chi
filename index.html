@@ -8,20 +8,19 @@
 <body>
 <center>
 	<h2>Simple js library for effects</h2>
+	<div>
+		<span class="tcode"> chij("pre").setHight(); </span>
+		<span class="tcode"> chij(".btn").loading({ load : true , on : "click" , success : function(){
+			// here code after load
+			alert("loaded")
+		}}) </span>
 
+	</div>
 <div>
 <pre class="ta">
 		<!-- add button with class btn--->
-		<span style="color: red">&lt;button class=</span><span style="color:blue;">"btn btn-light"</span>><span style="color:blue">click</span><span style="color: red">&lt;/button&gt;</span>
-		<span style="color: red">&lt;script type=<span style="color:blue;">"text/javascript"</span>&gt;</span>
-		<span style="color:#a10;">
-			btn(".btn").loading({ load : true , on : "click" , success : function(){
+		&lt;a href="#"&gt; High light text &lt;/a&gt;
 
-				alert("loaded")
-
-			} });
-		</span>
-		<span style="color: red">&lt;/script&gt;</span>
 </pre>
 <br>
 <button class="btn btn-light">click</button>
@@ -29,8 +28,8 @@
 </center>
 <!-- script --->
 <script>
-
-	btn(".btn").loading({ load : true , on : "click" , success : function(){
+	chij("pre").setHigh();
+	chij(".btn").loading({ load : true , on : "click" , success : function(){
 
 		alert("loaded")
 
@@ -45,6 +44,17 @@
 		width:550px;
 		overflow:auto;
 		height:220px
+	}
+	.tcode {
+		display:inline-block;
+		color:#a10;
+		border:1px solid #000;
+		font-size:11px;
+		width:350px;
+		overflow:auto;
+		font-family:monospace;
+		height:120px;
+		position:relative;
 	}
 </style>
 </body>
