@@ -6,10 +6,28 @@
 	<script src="chi.js"></script>
 </head>
 <body>
+<center>
+	<h2>Simple js library for effects</h2>
 
+<div>
+<pre class="ta">
+		<!-- add button with class btn--->
+		<span style="color: red">&lt;button class=</span><span style="color:blue;">"btn btn-light"</span>><span style="color:blue">click</span><span style="color: red">&lt;/button&gt;</span>
+		<span style="color: red">&lt;script type=<span style="color:blue;">"text/javascript"</span>&gt;</span>
+		<span style="color:#a10;">
+			btn(".btn").loading({ load : true , on : "click" , success : function(){
+
+				alert("loaded")
+
+			} });
+		</span>
+		<span style="color: red">&lt;/script&gt;</span>
+</pre>
+<br>
 <button class="btn btn-light">click</button>
-
-
+</div>
+</center>
+<!-- script --->
 <script>
 
 	btn(".btn").loading({ load : true , on : "click" , success : function(){
@@ -19,5 +37,15 @@
 	} });
 
 </script>
+<style type="text/css">
+
+	.ta {
+	    text-align:center;
+		border:1px solid #000;
+		width:550px;
+		overflow:auto;
+		height:220px
+	}
+</style>
 </body>
 </html>
