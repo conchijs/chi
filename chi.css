@@ -1,0 +1,115 @@
+.btn {
+	cursor:pointer;
+    width: 58px;
+    height: 26px;
+    border: 0.70px solid #000;
+    box-shadow: 0 0 2px #020101;
+}
+.btn-light {
+	  background-color: #fff;
+	  color:#000;
+}
+.btn-dark {
+	background-color: #050a17;
+	color:#fff;
+}
+.btn:focus {
+	outline:none;
+}
+.anim-btn-load {
+	opacity:0.9;
+	border-left:1px solid #000;
+	z-index:999999;
+	-o-animation:ani 2s linear;
+	-moz-animation:ani 2s linear;
+	-webkit-animation:ani 2s linear;
+	animation:ani 2s linear;
+}
+.anim-btn-marq{
+	z-index:9;
+	background-color:#000;
+	height:9px;
+	margin:9px;
+	display:block;
+	position:relative;
+	-o-animation:marq 1s linear;
+	-moz-animation:marq 1s linear;
+	-webkit-animation:marq 1s linear;
+	animation:marq 1s linear;
+}
+@-webkit-keyframes ani {
+	from {
+		
+	}	
+	to {
+		margin-left:50px;
+		display:none;
+	}
+};
+@-o-keyframes ani {
+	from {
+		
+	}	
+	to {
+		margin-left:50px;
+		display:none;
+	}
+};
+@-moz-keyframes ani {
+	from {
+		
+	}	
+	to {
+		margin-left:50px;
+		display:none;
+	}
+};
+
+@keyframes ani {
+from {
+		
+	}	
+	to {
+		margin-left:50px;
+		display:none;
+	}
+}
+
+/* marq animation */
+@-webkit-keyframes marq {
+	from {
+		opacity:1;
+	}	
+	to {
+		opacity:0.9;
+		margin-top:-10px;
+	}
+};
+@-o-keyframes marq {
+		from {
+		opacity:1;
+	}	
+	to {
+		opacity:0.9;
+		margin-top:-10px;
+	}
+};
+@-moz-keyframes marq {
+	from {
+		opacity:1;
+	}	
+	to {
+		opacity:0.9;
+		margin-top:-10px;
+	}
+};
+
+@keyframes marq {
+	from {
+		opacity:1;
+	}	
+	to {
+		opacity:0.9;
+		margin-top:-10px;
+	}
+}
