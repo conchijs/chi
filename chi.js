@@ -83,9 +83,12 @@ function ch1( select ){
 		}
 
 	};
-
+	ch1.prototype.setHigh = function ( ) {
+		var addHigh = dom.innerHTML.replace(/\"(.*?)\"/g , '<blue>"$1"</blue>').replace(/\&lt;(.*?)\&gt;/g , "<<red>$1</red>>");
+		return dom.innerHTML = addHigh;
+	};
 };
-	const btn = function (s){
+	const chij = function (s){
 	this.s = s || null;
 	// append all functions
 	return new ch1( s );
