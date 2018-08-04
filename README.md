@@ -1,4 +1,3 @@
 # CHI JS
-this library is makeded by Amrmode
-this library makes effects 
+it's in updates now
 # Version 1.0 #
