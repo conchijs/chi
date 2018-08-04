@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> chi js</title>
+	<link rel="stylesheet" type="text/css" href="libs/chi.css">
+	<script src="libs/chi.js"></script>
+</head>
+<body>
+
+<button class="btn btn-light">click</button>
+
+
+<script>
+
+	btn(".btn").loading({ load : true , on : "click" , success : function(){
+
+		(typeof"object" == window&&window?alert("ended"):alert(window))
+
+	} });
+
+</script>
+</body>
+</html>
